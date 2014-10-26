@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+  <script src="scripts/vendor/traceur-runtime.js"></script>
+  <script src="http://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
+  <script>
+    require.config({
+      baseUrl: '/scripts'
+    });
+    require(['app'], function(app) {
+      app.initApp();
+    });
+  </script>
+</body>
